@@ -1,7 +1,7 @@
 //Creating Classes and Factories
 
 class Hamster {
-    constructor(name) {
+    constructor(name, owner, price) {
         this.owner = owner
         this.name = name
         this.price = 15
@@ -104,6 +104,32 @@ for (let i = 0; i < 2; i++) {
 // Have Timmy exercise twice
 for (let i = 0; i < 2; i++) {
     timmy.exercise()
-}   
+}
 
 console.log(timmy)
+
+//Chef Make Dinners
+class Dinner {
+    constructor(appetizer, entree, dessert) {
+        this.appetizer = appetizer;
+        this.entree = entree;
+        this.dessert = dessert;
+    }
+}
+
+class Chef {
+    createDinner(appetizer, entree, dessert) {
+        return new Dinner(appetizer, entree, dessert);
+    }
+}
+
+const chef = new Chef();
+
+const dinner1 = chef.createDinner('salad', 'steak and potatoes', 'vanilla cake');
+console.log(dinner1);
+
+const dinner2 = chef.createDinner('soup', 'chicken', 'ice cream');
+console.log(dinner2);
+
+const dinner3 = chef.createDinner('breadsticks', 'fish tacos', 'blueberry pie');
+console.log(dinner3);
