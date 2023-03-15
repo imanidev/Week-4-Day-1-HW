@@ -111,25 +111,25 @@ console.log(timmy)
 //Chef Make Dinners
 class Dinner {
     constructor(appetizer, entree, dessert) {
-        this.appetizer = appetizer;
-        this.entree = entree;
-        this.dessert = dessert;
+        this.appetizer = appetizer
+        this.entree = entree
+        this.dessert = dessert
     }
 }
 
 class Chef {
     createDinner(appetizer, entree, dessert) {
-        return new Dinner(appetizer, entree, dessert);
+        return new Dinner(appetizer, entree, dessert)
     }
 }
 
-const chef = new Chef();
+const chef = new Chef() // create a chef object
 
-const dinner1 = chef.createDinner('salad', 'steak and potatoes', 'vanilla cake');
-console.log(dinner1);
+const dinner1 = chef.createDinner('salad', 'steak and potatoes', 'vanilla cake')
+console.log(dinner1)
 
-const dinner2 = chef.createDinner('soup', 'chicken', 'ice cream');
-console.log(dinner2);
+const dinner2 = chef.createDinner('soup', 'chicken', 'ice cream')
+console.log(dinner2)
 
-const dinner3 = chef.createDinner('breadsticks', 'fish tacos', 'blueberry pie');
-console.log(dinner3);
+const dinner3 = chef.createDinner('breadsticks', 'fish tacos', 'blueberry pie')
+console.log(dinner3)
