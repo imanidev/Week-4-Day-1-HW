@@ -123,7 +123,7 @@ class Chef {
     }
 }
 
-const chef = new Chef() // create a chef object
+const chef = new Chef()
 
 const dinner1 = chef.createDinner('salad', 'steak and potatoes', 'vanilla cake')
 console.log(dinner1)
